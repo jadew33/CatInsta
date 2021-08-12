@@ -1,0 +1,42 @@
+@import "./variables";
+.post {
+  height: 80vh;
+  font-family: $primary;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1em;
+  border-bottom: 1px solid $dark-gray;
+  &__image {
+    width: 20em;
+    height: 20em;
+    object-fit: cover;
+    align-items: center;
+  }
+  &__text {
+    padding-left: 1em;
+  }
+  &__banner {
+    color: $light-gray;
+    font-family: $display;
+    padding-block: 0.5em;
+    i {
+      padding-right: 5px;
+    }
+  }
+  &__likes {
+    color: $purple;
+    i {
+      padding-right: 5px;
+    }
+  }
+  &__description {
+    color: $light-gray;
+  }
+  &__date {
+    font-size: 0.75em;
+  }
+}
+
+fas {
+  transform: scale(1.5);
+}

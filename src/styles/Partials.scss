@@ -1,0 +1,50 @@
+@import "./variables";
+%gradient-text {
+  background: $gradient;
+  background-clip: text;
+  color: transparent;
+}
+
+.nav {
+  height: 9vh;
+  width: 100%;
+  box-sizing: border-box;
+  padding-block: 0.5em;
+  padding-left: 1em;
+  position: relative;
+  background: $gradient;
+  &__title {
+    font-family: $app-title;
+    display: inline;
+    @extend %gradient-text;
+  }
+  &__icon {
+    position: absolute;
+    top: 1.25em;
+    margin-left: 0.25em;
+    @extend %gradient-text;
+  }
+  background: $dark-gray;
+}
+
+.footer {
+  display: flex;
+  margin-top: auto;
+  height: 8vh;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding-inline: 1.2em;
+  padding-block: 0.8em;
+  &__icon {
+    color: $light-gray;
+    transition: color 0.8s ease-in, transform 0.5 ease-in-out;
+    transform: scale(1.5);
+    &:hover {
+      @extend %gradient-text;
+      transform: scale(1.75);
+    }
+  }
+  background: $dark-gray;
+}

@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Chettan+2&family=Marck+Script&family=Roboto+Slab&display=swap");
+// Fonts
+$display: "Roboto Slab", serif;
+$primary: "Baloo Chettan 2", cursive;
+$app-title: "Marck Script", cursive;
+
+// Colors
+$purple: #df7dff;
+$light-gray: #e9ecef;
+$gray: #495057;
+$dark-gray: #343a40;
+$gradient: linear-gradient(
+  90deg,
+  rgba(223, 125, 255, 1) 0%,
+  rgba(255, 108, 131, 1) 100%
+);

@@ -1,0 +1,54 @@
+@import "./variables";
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  height: 28%;
+  justify-content: center;
+  padding-inline: 1em;
+  margin-block: 0.5em;
+  min-width: fit-content;
+  box-sizing: border-box;
+  border-block-end: 1px solid rgba($dark-gray, 0.8);
+  &__text {
+    display: flex;
+    flex-direction: column;
+    font-family: $primary;
+    line-height: 0.5px;
+    padding-inline-start: 1em;
+    height: 29vh;
+    color: $light-gray;
+    justify-content: center;
+    h2 {
+      font-family: $display;
+      letter-spacing: 2px;
+    }
+  }
+  &__image {
+    height: 8em;
+    width: 8em;
+    margin-block: 1em;
+    border-radius: 50%;
+  }
+  background: $gray;
+}
+
+.grid {
+  background: $gray;
+  display: inline-grid;
+  height: 51vh;
+  &__container {
+    display: inline-grid;
+    height: 51vh;
+    overflow: scroll;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 10px;
+  }
+  &__post,
+  &__item {
+    width: 6em;
+    height: 6em;
+    place-self: center;
+  }
+}
